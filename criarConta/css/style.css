@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap'); /*"Coiny", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap'); /* Nerko One */
+
+:root {
+    --cor1: white;
+    --cor2: #FFA4EB;
+    --cor3: #FBD1FF;
+    --cor4: #B6005BD6;
+}
+
+h1{
+    font-family: "Coiny", system-ui;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--cor4);
+}
+
+form{
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+    width: 350px;
+    height: 525px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--cor2);
+}
+
+label{
+    font-size: 23px;
+    display: block;
+    margin-top: 10px;
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+}
+
+.tituloLabel{
+    margin-left: 20px;
+}
+
+input{
+    border-radius: 8px;
+    border: none;
+    width: 90%;
+    height: 35px;
+    display: block;
+    margin: auto;
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Nerko One;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #fc7de0;
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    color: var(--cor4);
+}
+
+button a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+button a:hover, button:hover{
+    color: var(--cor3);
+    transform: scale(1.04);
+}
+
+#possuiConta{
+    display: flex;
+    gap: 3px;
+    font-family: "Coiny", system-ui;
+    font-weight: none;
+    margin-left: 23px;
+    color: var(--cor4);
+}
+
+::placeholder {
+   font-family: "Coiny", system-ui;
+   color: var(--cor4);
+}
+
+.inputEmail img,.inputSenha img, .inputConfirmarSenha img, .inputCpf img{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    margin-left: 20px;
+}
+
+.inputSenha img{
+    margin-top: 2.5px;
+}
+
+.inputEmail input, .inputSenha input, .inputConfirmarSenha input, .inputCpf input{
+    padding: 10px 10px 10px 40px; 
+    box-sizing: border-box;
+}
+
+@media (max-width: 393px) {
+    form {
+        width: 85%;
+    }
+
+    #possuiConta{
+        display: block;
+    }
+}

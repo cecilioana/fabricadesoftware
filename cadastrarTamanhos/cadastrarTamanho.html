@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Tamanhos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/cupcake2.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logosweetcandy.png" alt="Logo Sweet Candy">
+        <p id="cupcakeria" >Cupcakeria</p>
+    </header>
+    
+    <form action="" method="POST">
+
+        <h1>Cadastrar Tamanhos</h1>
+
+        <p id="pDeTamanho">Tamanhos</p>
+
+        <div class="listaTamanhos">
+            <p class="tamanhos">P (pequeno)</p>
+            <p class="tamanhos">M (médio)</p>
+            <p class="tamanhos">G (grande)</p>
+        </div>
+
+        <div class="inputNvTamanho">
+            <label for="tamanho">
+                <span class="tituloLabel">Digite o novo tamanho</span>
+            <input type="text" id="tamanho" name="tamanho" placeholder="Digite aqui..." required></label>
+        </div>
+
+        <div class="inputExcluirTamanho">
+            <label for="excluirTamanho">
+                <span class="tituloLabel">Digite o tamanho que deseja excluir</span>
+            <input type="text" id="excluirTamanho" name="excluirTamanho" placeholder="Digite aqui..." required></label>
+        </div>
+
+        <button type="reset">Cancelar</button>
+        <button type="submit"><a href="/Fabrica-Software-main/area/area.html">Confirmar</a></button>
+    </form>
+
+    <footer>
+        <div id="todasAsInformacoesFooter">
+            <div class="cardFooter">
+                <p class="informacaoFooter">Entre em contato</p>
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/contato.jpg">
+                    <a id="contatofooter" href="/Fabrica-Software-main/contato/contato.html">Contato</a>
+                </div>
+    
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/telefone.jpg" alt="Telefone:">
+                    <p class="miniInformacao">+ 55 (99) 9999-9999</p>
+                </div>
+    
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/logoEmailRosa.jpg" alt="E-mail: ">
+                    <p class="miniInformacao">sweetcandycupcakeria@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="cardFooter">
+                    <p class="informacaoFooter">Nos siga no Instagram</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/logoInstaRosa.jpg" alt="Instagram: ">
+                        <a id="instagram" href="https://www.instagram.com/cupcakeriacandy/">@cupcakeriacandy</a>
+                    </div>                
+                <div id="divLocalizacao">
+                    <p class="informacaoFooter">Localização</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/localizacao.jpg" alt="Localização: ">
+                        <p class="miniInformacao">BR-174, Km 3 S/n - Zona Urbana, Vilhena - Ro, 76980-000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="direitosfooter">©2024 Sweet Candy Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
