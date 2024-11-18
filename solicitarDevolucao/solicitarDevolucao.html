@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Devolução</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="img/cupcake2.png" type="image/x-icon">
+</head>
+
+    <header>
+        <img id="logo" src="img/logosweetcandy.png" alt="Logo Sweet Candy">
+        <p id="cupcakeria" >Cupcakeria</p>
+    </header><br>
+
+<body>
+    <div class="container">
+        <h2>Solicitar Devolução</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="sections">
+                <div class="section left">
+                    <h3>Razão do retorno</h3>
+                    <label>
+                        <input type="radio" name="motivo" value="danificado">
+                        Item (itens) danificado(s) ou defeituoso(s)
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo" value="tamanho">
+                        Não é verdade em tamanho / medição
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo" value="malfeito">
+                        Mal feito / Danificado
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo" value="qualidade">
+                        Qualidade dos ingredientes
+                    </label>
+                    <div class="upload">
+                        <label for="image" id="file" tabindex="0">
+                            <span id="filee"> Carregue fotos</span>
+                            <input type="file" id="image" accept="image/*" class="image">
+                            <span ><img class="fotoinput" src="img/importimage.png" alt='imagem'></span>
+                        </label>
+                    </div>
+                </div>
+                
+
+                <div class="section right">
+                    <h3>Etapas de Reembolso</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="circle"></span>
+                            <span>Solicitado para devolução</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="circle"></span>
+                            <span>Devolução Recebida</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="circle"></span>
+                            <span>Verificação de qualidade concluída</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="circle"></span>
+                            <span>Reembolso</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="circle"></span>
+                            <span>Reembolsado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="cancel"><a href="/Fabrica-Software-main/vendaCupcake/vendaCupcake.html">Cancelar</a></button>
+                <button type="submit" class="confirm"><a href="/Fabrica-Software-main/agradecimento/agradecimento.html">Confirmar</a></button>
+            </div>
+        </form>
+    </div><br>
+
+    <footer>
+        <div id="todasAsInformacoesFooter">
+            <div class="cardFooter">
+                <p class="informacaoFooter">Entre em contato</p>
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/contato.jpg">
+                    <a id="contatofooter" href="/Fabrica-Software-main/contato/contato.html">Contato</a>
+                </div>
+
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/telefone.jpg" alt="Telefone:">
+                    <p class="miniInformacao">+ 55 (99) 9999-9999</p>
+                </div>
+
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/logoEmailRosa.jpg" alt="E-mail: ">
+                    <p class="miniInformacao">sweetcandycupcakeria@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="cardFooter">
+                    <p class="informacaoFooter">Nos siga no Instagram</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/logoInstaRosa.jpg" alt="Instagram: ">
+                        <a id="instagram" href="https://www.instagram.com/cupcakeriacandy/">@cupcakeriacandy</a>
+                    </div>      
+
+                <div id="divLocalizacao">
+                    <p class="informacaoFooter">Localização</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/localizacao.jpg" alt="Localização: ">
+                        <p class="miniInformacao">BR-174, Km 3 S/n - Zona Urbana, Vilhena - RO, 76980-000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="direitosfooter">©2024 Sweet Candy Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

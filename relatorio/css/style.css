@@ -1,0 +1,101 @@
+:root { 
+    --corprincipal:#FFA4EB;
+
+    --corsecundaria: #fbd1fb;
+
+    --cor1: white; 
+
+    --cor2: #FFA4EB; 
+
+    --cor3: #FBD1FF; 
+
+    --cor4: #B6005BD6; 
+
+    --botao: #fc7de0;
+} 
+
+#fundo{
+    width: 350px;
+    height: 500px;
+    max-width: 350px;
+    max-height: 500px;
+    min-width: 325px;
+    min-height: 400px;
+    margin: auto;
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1{
+    text-align: center;
+    color: var(--cor4);
+    font-family: "Coiny", system-ui ;
+}
+
+#data-inicio,#data-entrega1 {
+    display: flex;
+    width: 100%;
+
+}
+
+label{
+    color: var(--cor4);
+    font-family: "Coiny", system-ui ;
+}
+
+input{
+    border: none;
+    padding: 4%;
+    border-radius: 8px;
+}
+
+#data-inicio label, #data-fim label {
+    color: var(--cor4);
+}
+
+#entrega , #venda {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#produto, #vendedor , #cliente{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#produtoo, #vendedorr , #clientee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button{
+    margin: auto;
+    display: block;
+    border: none;
+    margin-top: 10px;
+    background-color:var(--botao);
+    border-radius: 8px;
+    color: var(--cor4);
+    padding: 1.5%;
+    width: 80px;
+    font-family: "Coiny", system-ui;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button a:hover, button:hover{
+    color: var(--cor3);
+    transform: scale(1.04);
+}
+
+button a, button{
+    color: var(--cor4);
+}

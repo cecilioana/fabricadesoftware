@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap'); /*"Coiny", system-ui;*/
+
+:root{
+    --cor1: white;
+    --cor2: #FFA4EB;
+    --cor3: #FBD1FF;
+    --cor4: #B6005BD6;
+}
+
+#sobreNos {
+    border: var(--cor4) 2px solid;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    background-color: var(--cor1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+}
+
+h2{
+    font-size: 25px;
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+}
+
+p{
+    font-size: 23px;
+}
+
+body{
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+}
