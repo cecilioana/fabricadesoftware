@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/cupcake2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/venda de cupcake/venda_cupcake.html">
+    <title>Sweet Candy</title>
+</head>
+<header>
+   <img id="logo" src="img/logosweetcandy.png" alt="Logo Sweet Candy">
+   <p id="cupcakeria" >Cupcakeria</p>
+</header><br>
+
+<body>
+   <main>
+
+     <div class="container">
+         <h1>Checkout</h1><br>
+
+         <div class="section">
+             <h2>Formas de Pagamento</h2>
+             <div class="option">
+                 <input type="radio" name="pagamento" value="credito"> <label>Cartão de Crédito no App</label>
+             </div>
+             <div class="option">
+                 <input type="radio" name="pagamento" value="dinheiro"> <label>Dinheiro</label>
+             </div>
+             <div class="option">
+                 <input type="radio" name="pagamento" value="maquina"> <label>Máquina Móvel</label>
+             </div>
+             <div class="option">
+                 <input type="radio" name="pagamento" value="pix"> <label>PIX no App</label>
+             </div>
+         </div>
+ 
+
+         <div class="section">
+             <h2>Formas de Entrega</h2>
+             <div class="option">
+                 <input type="radio" name="entrega" value="loja"> <label>Retirada na Loja</label>
+             </div>
+             <div class="option">
+                 <input type="radio" name="entrega" id="select-entrega"     onchange="redirecionarPagina()" value="/enderecoDeEntrega/enderecoDeEntrega.html"></input>
+                 <label>Entrega (Delivery)</label>
+                 <script>
+                  function redirecionarPagina() {
+                  var select = document.getElementById("select-entrega");
+                  var opcaoSelecionada = select.value;
+                  if(opcaoSelecionada) {
+                      window.location.href = opcaoSelecionada;
+                     }
+                  }
+              </script>
+             </div>
+         </div>
+
+         <div class="section resumo">
+            <h3>Resumo do Pedido</h3>
+            <p>Produto: </p>
+            <p>Quantidade: 0</p>
+            <p>Taxa de serviço: R$ 00,00</p>
+            <p>Taxa de Entrega: R$ 00,00</p>
+            <p>Total: R$ 00,00</p>
+        </div>
+
+         <div class="section buttons">
+          <button type="reset">Limpar Carrinho</button>
+          <button onclick="window.location.href='/Fabrica-Software-main/pedido/pedido.html';">Voltar</button>
+          <button onclick="window.location.href='/Fabrica-Software-main/vendaCupcake/vendaCupcake.html';">Fazer Pedido</button>
+         </div>
+     </div>
+   </main><br>
+
+<footer>
+   <div id="todasAsInformacoesFooter">
+      <div class="cardFooter">
+         <p class="informacaoFooter">Entre em contato</p>
+      <div class="displayInformacao">
+         <img class="iconesFooter" src="img/contato.jpg">
+         <a id="contatofooter" href="/Fabrica-Software-main/contato/contato.html">Contato</a>
+      </div>
+
+      <div class="displayInformacao">
+         <img class="iconesFooter" src="img/telefone.jpg" alt="Telefone:">
+         <p class="miniInformacao">+ 55 (99) 9999-9999</p>
+      </div>
+  
+      <div class="displayInformacao">
+         <img class="iconesFooter" src="img/logoEmailRosa.jpg" alt="E-mail: ">
+         <p class="miniInformacao">sweetcandycupcakeria@gmail.com</p>
+      </div>
+   </div>
+  
+   <div class="cardFooter">
+      <p class="informacaoFooter">Nos siga no Instagram</p>
+      <div class="displayInformacao">
+         <img class="iconesFooter" src="img/logoInstaRosa.jpg" alt="Instagram: ">
+         <a id="instagram" href="https://www.instagram.com/cupcakeriacandy/">@cupcakeriacandy</a>
+      </div>
+                
+   <div id="divLocalizacao">
+      <p class="informacaoFooter">Localização</p>
+   <div class="displayInformacao">
+      <img class="iconesFooter" src="img/localizacao.jpg" alt="Localização: ">
+      <p class="miniInformacao">BR-174, Km 3 S/n - Zona Urbana, Vilhena - RO, 76980-000</p>
+   </div>
+   </div>
+</div>
+</div>
+
+   <p id="direitosfooter">©2024 Sweet Candy Todos os direitos reservados.</p>
+
+</footer>
+</body>
+</html>

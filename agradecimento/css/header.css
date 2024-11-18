@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap'); /* "Coiny", system-ui; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: white;
+    --cor2: #FFA4EB;
+    --cor3: #FBD1FF;
+    --cor4: #B6005BD6;
+    --cor5 : #fc7de0;
+}
+
+header {
+    background-color: var(--cor3);
+    box-shadow: 0 8px 10px var(--cor2);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Mais flexível */
+    width: 100%;
+}
+
+#logo {
+    max-width: 95px;
+    width: 100%;
+    height: auto;
+    margin-right: 15px;
+}
+
+#cupcakeria {
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+    font-size: 3vh;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    padding: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        justify-content: center; /* Alinhar centralizado em telas menores */
+    }
+    
+    #cupcakeria {
+        font-size: 2.5vh; /* Ajuste da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Melhor alinhamento */
+    }
+
+    #logo {
+        max-width: 80px;
+        margin-bottom: 10px; /* Espaçamento abaixo do logo */
+    }
+
+    #cupcakeria {
+        font-size: 2em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    #logo {
+        max-width: 70px; 
+    }
+
+    #cupcakeria {
+        font-size: 1.8em;
+    }
+}
