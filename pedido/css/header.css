@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap'); /* "Coiny", system-ui; */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor1: white;
+    --cor2: #FFA4EB;
+    --cor3: #FBD1FF;
+    --cor4: #B6005BD6;
+}
+
+header {
+    background-color: var(--cor3);
+    box-shadow: 0 8px 10px var(--cor2);
+    height: auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftheader {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    max-width: 95px;
+    min-width: 50px;
+    width: 95px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#cupcakeria {
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+    font-size: 3vh;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-menu {
+    position: relative;
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item-menu:hover .submenu {
+    max-height: 100vh;
+}
+
+.submenu {
+    position: absolute;
+    width: max-content;
+    max-height: 0;
+    background: linear-gradient(var(--cor3) 0%, var(--cor2) 100%);
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.submenu a {
+    display: block;
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    color: var(--cor1);
+}
+
+.link-submenu {
+    font-size: 16px;
+    margin: 10px;
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items:center;
+        padding: 10px;
+    }
+
+    #logo {
+        max-width: 120px;
+        margin-right: 30px;
+    }
+
+    #cupcakeria {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 325px) {
+    #logo {
+        max-width: 100px;
+        margin-right: 30px ; 
+    }
+    #cupcakeria {
+        font-size: 1.5em;
+    }
+}

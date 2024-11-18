@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Candy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="/pedido/img/cupcake2.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="leftheader">
+
+            <img id="logo" src="img/logosweetcandy.png" alt="Logo Sweet Candy">
+
+            <div>
+                <nav>
+                    <ul class="menu">
+                        <li class="item-menu">Menu
+                            <ul class="submenu">
+                                <li class="item-sub-menu"><a class="link-submenu" href="/Fabrica-Software-main/solicitarDevolucao/solicitarDevolucao.html">Devolução</a></li>
+                                <li class="item-sub-menu"><a class="link-submenu" href="/Fabrica-Software-main/cadastrarFeedback/cadastrarFeedback.html">Feedback</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="rightheader">
+            <p id="cupcakeria" >Cupcakeria</p>
+        </div>
+
+    </header>
+
+
+    <script>
+        function redirecionarPagina() 
+    {
+        var select = document.getElementById("select-embalagem");
+        var opcaoSelecionada = select.value;
+        if(opcaoSelecionada) {
+            window.location.href = opcaoSelecionada;
+    }
+}
+    </script>
+
+    <section>
+
+        <div class="telafundo">
+            <h1>Faça seu pedido</h1>
+
+            <p id="pintroducao">Monte o cupcake do seu jeito e faça uma escolha perfeita! </p>
+
+            <div id="main-container">
+                <div class="select-container">
+                    <label class="select-label" for="select-tamanho">Tamanho</label>
+                    <div id="select-tamanho-container" class="select-body">
+                        <select name="tamanho" id="select-tamanho">
+                            <option value="selecionar">Selecione uma opção</option>
+                            <option value="p">P (pequeno)</option>
+                            <option value="m">M (médio)</option>
+                            <option value="g">G (grande)</option>
+                        </select>
+                        <div class="select-icon">
+                            <img src="img/iconseta.png" alt="icon seta">
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="select-container">
+                    <label class="select-label" for="select-recheio">Recheio</label>
+                    <div id="select-recheio-container" class="select-body">
+                        <select name="recheio" id="select-recheio">
+                            <option value="selecionar">Selecione uma opção</option>
+                            <option value="brigadeiro">Brigadeiro</option>
+                            <option value="doce de leite">Doce de leite</option>
+                            <option value="leite ninho">Leite Ninho</option>
+                            <option value="nutella">Nutella</option>
+                            <option value="beijinho">Beijinho</option>
+                            <option value="geleia de morango">Geleia de morango</option>
+                            <option value="nenhum">Nenhum</option>
+                        </select>
+                        <div class="select-icon">
+                            <img src="img/iconseta.png" alt="icon seta">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="select-container">
+                    <label class="select-label" for="select-cobertura">Cobertura</label>
+                    <div id="select-cobertura-container" class="select-body">
+                        <select name="cobertura" id="select-cobertura">
+                            <option value="selecionar">Selecione uma opção</option>
+                            <option value="glacê">Glacê</option>
+                            <option value="chantilly">Chantilly</option>
+                            <option value="merengue">Merengue</option>
+                            <option value="ganache">Ganache</option>
+                            <option value="cobertura de brigadeiro">Brigadeiro</option>
+                            <option value="nenhum">Nenhum</option>
+                        </select>
+                        <div class="select-icon">
+                            <img src="img/iconseta.png" alt="icon seta">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="select-container">
+                    <label class="select-label" for="select-cor-cobertura">Cor da Cobertura</label>
+                    <div id="select-cor-cobertura-container" class="select-body">
+                        <select name="cor cobertura" id="select-cor-cobertura">
+                            <option value="selecionar">Selecione uma opção</option>
+                            <option value="roxo">Roxo</option>
+                            <option value="lilás">Lilás</option>
+                            <option value="rosa">Rosa</option>
+                            <option value="azul">Azul</option>
+                            <option value="azul claro">Azul Claro</option>
+                            <option value="branco">Branco</option>
+                            <option value="verde menta">Verde Menta</option>
+                            <option value="nenhum">Nenhum</option>
+                        </select>
+                        <div class="select-icon">
+                            <img src="img/iconseta.png" alt="icon seta">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="select-container">
+                    <label class="select-label" for="select-embalagem">Embalagem</label>
+                    <div id="select-embalagem-container" class="select-body">
+                        <select name="embalagem" id="select-embalagem" onchange="redirecionarPagina()">
+                            <option value="selecionar">Selecione uma opção</option>
+                            <option value="padrao">Padrão</option>
+                            <option value="/embalagemPersonalizada/embalagem.html">Personalizada</option>
+                            <option value="/eventos/eventos.html">Para eventos</option>
+                        </select>
+                        <div class="select-icon">
+                            <img src="img/iconseta.png" alt="icon seta">
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="buttons">
+                <button type="reset">
+                    <a href="">Cancelar</a></button>
+                <button type="submit">
+                    <a href="/Fabrica-Software-main/checkout/checkout.html">Finalizar pedido</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="todasAsInformacoesFooter">
+            <div class="cardFooter">
+                <p class="informacaoFooter">Entre em contato</p>
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/contato.jpg">
+                    <a id="contatofooter" href="/Fabrica-Software-main/contato/contato.html">Contato</a>
+                </div>
+    
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/telefone.jpg" alt="Telefone:">
+                    <p class="miniInformacao">+ 55 (99) 9999-9999</p>
+                </div>
+    
+                <div class="displayInformacao">
+                    <img class="iconesFooter" src="img/logoEmailRosa.jpg" alt="E-mail: ">
+                    <p class="miniInformacao">sweetcandycupcakeria@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="cardFooter">
+                    <p class="informacaoFooter">Nos siga no Instagram</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/logoInstaRosa.jpg" alt="Instagram: ">
+                        <a id="instagram" href="https://www.instagram.com/cupcakeriacandy/">@cupcakeriacandy</a>
+                    </div>      
+
+                <div id="divLocalizacao">
+                    <p class="informacaoFooter">Localização</p>
+                    <div class="displayInformacao">
+                        <img class="iconesFooter" src="img/localizacao.jpg" alt="Localização: ">
+                        <p class="miniInformacao">BR-174, Km 3 S/n - Zona Urbana, Vilhena - RO, 76980-000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="direitosfooter">©2024 Sweet Candy Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
